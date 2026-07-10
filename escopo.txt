@@ -1,0 +1,55 @@
+1 - Documento de Visão do Projeto
+
+Plataforma para aluguel de espaços ou imóveis por temporada onde usuários podem cadastrar imóveis disponíveis e cliente podem reservar esse imóveis.
+
+- existem dois tipos de usuários, o locatário e o locador. (anunciante e host).
+- o locatário é quem tem um espaço ou um imóvel disponível para alugar
+- o locador é quem precisar realizar uma reserva de aluguel de espaço ou imóvel
+
+Esta solução tem como objetivo principal conectar ambas as partes de forma fácil e ágil, através de um site (ou plataforma online) onde o locador possa verificar facilmente as hospedagens disponíveis na data desejada, vendo fotos e escolhendo a que melhor lhe agradar/atender
+Os espaços serão separados por tipo (imóvel, espaço de cooworking, sala de reunião etc)
+
+Restrições do projeto (tecnologias e escopo):
+- 
+
+
+2 - Requisitos
+Funcionais:
+- Cadastro de usuário
+- Login de usuário
+- Logout seguro de usuário
+- Desativação/exclusão de usuário -> reativação também?
+- Anfitrião pode cadastrar espaços/imóveis
+- Anfitrião pode editar imóvel
+- Anfitrião pode excluir imóvel
+- Anfitrião pode bloquear data para impedir reserva do imóvel
+- Anfitrião pode inserir, alterar ou excluir foto do espaço/imóvel
+- Anfitrião pode alterar próprios dados do cadastro
+- Anfitrião terá painel com espaços/imóveis e as datas reservada de cada um
+- Anfitrião terá painel com histórico de alugueis de espaços/imóveis
+- Hóspede pode alterar os próprios dados de cadastro
+- Hóspede pode fazer busca de espaço/imóvel
+- Hóspede pode filtrar espaço/imóvel por endereço (rua, bairro, cidade, estado etc)
+- Hóspede pode filtrar por característica do espaço/imóvel (piscina, quadra, projetos, televisão etc)
+- Hóspede pode verificar datas disponíveis
+- Hóspede pode reservar um epaço/imóvel
+- Hóspede terá painel com reservas atuais e passadas (histórico)
+- A reserva terá uma validação prévia (impedir duplicidade)
+
+
+Não funcionais:
+- Será utilizado banco de dados relacional
+- Será utilizado arquitetura de microsserviços
+- Autenticação do usuário com JWT
+- Senha salva como hash
+- Todos os erros ou problemas devem ser tratados e respondidos com mensagens claras
+- Qualquer reserva duplicada deve ser bloqueada pelo servidor
+- Usuário logado não pode editar ou excluir anúncios de outro usuário
+- Não será utilizado MCS ou contrutores sem código como WprdPress, Wix e similares
+- Utilização de Node.js
+- Utilização de Express.js
+- Utilização de TypeScript
+- Utilização Servidor PostgeSQL em nuvem
+- Sistema deve ser acessível através da internet
+
+3 - Planejamento (histórias de usuários)
