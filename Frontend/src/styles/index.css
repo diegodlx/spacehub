@@ -1,0 +1,233 @@
+:root {
+    color-scheme: light;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #18352e;
+    background: #f4f7f2;
+    --accent: #246a50;
+    --accent-dark: #194e3b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(ellipse at 5% 10%, #dceadc 0, transparent 50%),
+        radial-gradient(ellipse at 95% 90%, #e8e3cf 0, transparent 45%),
+        #f4f7f2;
+}
+
+header,
+main,
+#credenciais {
+    width: 100%;
+    max-width: 440px;
+}
+
+header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 27px;
+    font-weight: 750;
+    letter-spacing: -1px;
+}
+
+.header-container h1::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    border: 8px solid var(--accent);
+    border-radius: 10px 10px 10px 2px;
+    transform: rotate(-8deg);
+}
+
+main {
+    padding: 36px 36px 24px;
+    background: #fff;
+    border: 1px solid #dce4dc;
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+main h2 {
+    margin: 0;
+    font-size: clamp(1.35rem, 4vw, 1.65rem);
+    line-height: 1.35;
+    font-weight: 650;
+    letter-spacing: -0.6px;
+    text-wrap: balance;
+}
+
+#credenciais {
+    padding: 0 36px 36px;
+    background: #fff;
+    border: 1px solid #dce4dc;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 24px 48px -32px #18352e55;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form br {
+    display: none;
+}
+
+#login-form label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#login-form input {
+    width: 100%;
+    min-width: 0;
+    min-height: 50px;
+    margin-bottom: 22px;
+    padding: 12px 14px;
+    border: 1px solid #aabbb1;
+    border-radius: 9px;
+    background: #fafcf9;
+    color: #18352e;
+    font: inherit;
+    font-size: 1rem;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+#login-form input:hover {
+    border-color: #668b78;
+}
+
+#login-form input:focus {
+    outline: 3px solid #246a5033;
+    outline-offset: 2px;
+    border-color: var(--accent);
+    background: #fff;
+}
+
+#login-button {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 4px;
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+#login-button:hover {
+    background: var(--accent-dark);
+}
+
+#login-button:active {
+    transform: translateY(1px);
+}
+
+#login-button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+
+#login-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.register-prompt {
+    margin: 24px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #dce4dc;
+    color: #52675d;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.register-prompt a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 6px;
+    color: var(--accent);
+    font-weight: 650;
+    text-underline-offset: 4px;
+}
+
+.register-prompt a:hover {
+    color: var(--accent-dark);
+}
+
+.register-prompt a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 32px 24px;
+    }
+
+    header {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    header {
+        margin-bottom: 24px;
+    }
+
+    main {
+        padding: 28px 24px 24px;
+        border-radius: 16px 16px 0 0;
+    }
+
+    #credenciais {
+        padding: 0 24px 28px;
+        border-radius: 0 0 16px 16px;
+    }
+}
+
+@media (max-height: 600px) {
+    body {
+        justify-content: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #login-form input,
+    #login-button {
+        transition: none;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta | SpaceHub</title>
+    <meta name="description" content="Crie sua conta no SpaceHub para reservar ou anunciar espaços.">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <header>
+        <div class="header-container"><h1>SpaceHub</h1></div>
+    </header>
+    <main>
+        <h2>Crie sua conta</h2>
+        <p class="register-intro">Encontre seu próximo espaço ou comece a anunciar.</p>
+        <p class="required-note">Campos com * são obrigatórios.</p>
+        <form id="register-form" method="post">
+            <div class="form-field full-width">
+                <label for="name">Nome completo *</label>
+                <input type="text" id="name" name="nome" maxlength="150" autocomplete="name" required>
+            </div>
+            <div class="form-field full-width">
+                <label for="profile">Como você deseja usar o SpaceHub? *</label>
+                <select id="profile" name="perfil" required>
+                    <option value="" disabled selected>Selecione seu perfil</option>
+                    <option value="cliente">Hóspede — quero reservar espaços</option>
+                    <option value="host">Anfitrião — quero anunciar espaços</option>
+                </select>
+            </div>
+            <div class="form-field full-width">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" maxlength="255" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="telefone" maxlength="20" autocomplete="tel" aria-describedby="phone-help">
+                <small id="phone-help">Opcional. Inclua o DDD.</small>
+            </div>
+            <div class="form-field">
+                <label for="birth-date">Data de nascimento</label>
+                <input type="date" id="birth-date" name="data_nascimento" autocomplete="bday">
+                <small>Opcional.</small>
+            </div>
+            <div class="form-field full-width">
+                <label for="profile-photo">Link da foto de perfil</label>
+                <input type="url" id="profile-photo" name="foto_perfil" maxlength="500" placeholder="https://exemplo.com/minha-foto.jpg" aria-describedby="photo-help">
+                <small id="photo-help">Opcional. Informe o endereço de uma imagem.</small>
+            </div>
+            <div class="form-field">
+                <label for="password">Senha *</label>
+                <input type="password" id="password" name="senha" minlength="8" autocomplete="new-password" required>
+            </div>
+            <div class="form-field">
+                <label for="confirm-password">Confirmar senha *</label>
+                <input type="password" id="confirm-password" name="confirmar_senha" minlength="8" autocomplete="new-password" required>
+            </div>
+            <button type="submit" id="register-button" class="full-width">Criar conta</button>
+            <p id="register-message" class="full-width" role="status" aria-live="polite" hidden></p>
+        </form>
+        <p class="register-prompt">Já tem uma conta? <a href="../index.html">Entrar</a></p>
+    </main>
+    <script type="module" src="../scripts/register.js"></script>
+</body>
+</html>

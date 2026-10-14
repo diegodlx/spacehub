@@ -12,7 +12,7 @@ CREATE TYPE "status_reserva" AS ENUM (
 );
 
 CREATE TABLE "usuarios" (
-  "id" uuid PRIMARY KEY,
+  "id" uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   "nome" varchar(150) NOT NULL,
   "perfil" perfil_usuario NOT NULL,
   "email" varchar(255) UNIQUE NOT NULL,
