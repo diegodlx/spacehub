@@ -1,7 +1,16 @@
 import type { z } from "zod";
-import type { registerSchema } from "./auth.validation";
+import type { loginSchema, registerSchema } from "./auth.validation";
 
 export type RegisterUserInput = z.output<typeof registerSchema>;
+export type LoginUserInput = z.output<typeof loginSchema>;
+
+export interface LoginUserRecord {
+    id: string;
+    nome: string;
+    email: string;
+    perfil: "host" | "cliente";
+    senha_hash: string;
+}
 
 export interface CreateUserData {
     nome: string;

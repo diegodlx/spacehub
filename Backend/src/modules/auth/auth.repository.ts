@@ -1,5 +1,5 @@
 import { pool } from "../../database/connection";
-import type { CreateUserData } from "./auth.types";
+import type { CreateUserData, LoginUserRecord } from "./auth.types";
 
 export async function registerRepository(user: CreateUserData) {
     const result = await pool.query(
@@ -21,4 +21,13 @@ export async function registerRepository(user: CreateUserData) {
     );
 
     return result.rows[0];
+}
+
+export async function findUserByEmail(email: string): Promise<LoginUserRecord | null> {
+    const result = await pool.query<LoginUserRecord>(
+        "SELECT id, nome, email, perfil, senha_hash FROM usuarios WHERE email = $1",
+        [email]
+    );
+
+    return result.rows[0] ?? null;
 }

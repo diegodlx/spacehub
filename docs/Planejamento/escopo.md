@@ -81,39 +81,39 @@ Os espaços serão classificados por tipo, como imóvel por temporada, espaço d
 
 ### Anúncios e gestão do anfitrião
 
-- **US06:** Como anfitrião, quero cadastrar um espaço com título, descrição, localização, tipo, características, preço por noite e pelo menos uma foto para disponibilizá-lo para reservas. (RF02, RF03, RF04)
-- **US07:** Como anfitrião, quero editar meus anúncios para manter suas informações atualizadas. (RF02)
-- **US08:** Como anfitrião, quero excluir um anúncio para retirar um espaço que não desejo mais oferecer. (RF02)
-- **US09:** Como anfitrião, quero adicionar, substituir e remover fotos dos meus espaços para apresentar suas condições aos hóspedes. (RF03)
-- **US10:** Como anfitrião, quero definir e atualizar o preço por noite dos meus espaços para manter os valores dos anúncios atualizados. (RF04)
-- **US11:** Como anfitrião, quero bloquear períodos no calendário de um espaço para impedir reservas quando ele estiver indisponível. (RF05)
-- **US12:** Como anfitrião, quero visualizar meus espaços e suas datas reservadas em um painel para organizar sua utilização. (RF05, RF11)
-- **US13:** Como anfitrião, quero consultar o histórico de reservas dos meus espaços para acompanhar os aluguéis realizados. (RF11)
+- **US05:** Como anfitrião, quero cadastrar um espaço com título, descrição, localização, tipo, características, preço por noite e pelo menos uma foto para disponibilizá-lo para reservas. (RF02, RF03, RF04)
+- **US06:** Como anfitrião, quero editar meus anúncios para manter suas informações atualizadas. (RF02)
+- **US07:** Como anfitrião, quero excluir um anúncio para retirar um espaço que não desejo mais oferecer. (RF02)
+- **US08:** Como anfitrião, quero adicionar, substituir e remover fotos dos meus espaços para apresentar suas condições aos hóspedes. (RF03)
+- **US09:** Como anfitrião, quero definir e atualizar o preço por noite dos meus espaços para manter os valores dos anúncios atualizados. (RF04)
+- **US10:** Como anfitrião, quero bloquear períodos no calendário de um espaço para impedir reservas quando ele estiver indisponível. (RF05)
+- **US11:** Como anfitrião, quero visualizar meus espaços e suas datas reservadas em um painel para organizar sua utilização. (RF05, RF11)
+- **US12:** Como anfitrião, quero consultar o histórico de reservas dos meus espaços para acompanhar os aluguéis realizados. (RF11)
 
 ### Busca e escolha do espaço
 
-- **US14:** Como hóspede, quero buscar espaços para encontrar opções que atendam à minha necessidade. (RF06)
-- **US15:** Como hóspede, quero filtrar espaços por tipo para encontrar imóveis, espaços de coworking ou salas de reunião. (RF06)
-- **US16:** Como hóspede, quero filtrar espaços por localização para encontrar opções na região desejada. (RF06)
-- **US17:** Como hóspede, quero filtrar espaços por características para encontrar opções com os recursos de que preciso. (RF06)
-- **US18:** Como hóspede, quero filtrar espaços por faixa de preço por noite para encontrar opções compatíveis com meu orçamento. (RF06)
-- **US19:** Como hóspede, quero informar o período desejado na busca para encontrar espaços disponíveis nessas datas. (RF06)
-- **US20:** Como hóspede, quero visualizar fotos, descrição, localização, características e preço por noite de um espaço para decidir se ele atende à minha necessidade. (RF07)
-- **US21:** Como hóspede, quero consultar o calendário de disponibilidade de um espaço para escolher um período livre. (RF07)
+- **US13:** Como hóspede, quero buscar espaços para encontrar opções que atendam à minha necessidade. (RF06)
+- **US14:** Como hóspede, quero filtrar espaços por tipo para encontrar imóveis, espaços de coworking ou salas de reunião. (RF06)
+- **US15:** Como hóspede, quero filtrar espaços por localização para encontrar opções na região desejada. (RF06)
+- **US16:** Como hóspede, quero filtrar espaços por características para encontrar opções com os recursos de que preciso. (RF06)
+- **US17:** Como hóspede, quero filtrar espaços por faixa de preço por noite para encontrar opções compatíveis com meu orçamento. (RF06)
+- **US18:** Como hóspede, quero informar o período desejado na busca para encontrar espaços disponíveis nessas datas. (RF06)
+- **US19:** Como hóspede, quero visualizar fotos, descrição, localização, características e preço por noite de um espaço para decidir se ele atende à minha necessidade. (RF07)
+- **US20:** Como hóspede, quero consultar o calendário de disponibilidade de um espaço para escolher um período livre. (RF07)
 
 ### Reservas
 
-- **US22:** Como hóspede, quero reservar um espaço durante um período disponível para garantir sua utilização. (RF08)
-- **US23:** Como hóspede, quero visualizar na interface a confirmação e os detalhes da reserva após sua gravação para conferir o espaço e o período reservados. (RF09)
-- **US24:** Como hóspede, quero visualizar minhas reservas atuais e futuras em um painel para acompanhar meus agendamentos. (RF10)
-- **US25:** Como hóspede, quero consultar minhas reservas passadas para acessar meu histórico de utilização. (RF10)
-- **US26:** Como hóspede, quero ser informado quando o período escolhido ficar indisponível durante a reserva para selecionar outro período. (RF08, RN02, RN03)
-- **US27:** Como anfitrião, quero consultar as reservas atuais e futuras dos meus espaços para acompanhar sua ocupação e planejar os próximos aluguéis. (RF11)
+- **US21:** Como hóspede, quero reservar um espaço durante um período disponível para garantir sua utilização. (RF08)
+- **US22:** Como hóspede, quero visualizar na interface a confirmação e os detalhes da reserva após sua gravação para conferir o espaço e o período reservados. (RF09)
+- **US23:** Como hóspede, quero visualizar minhas reservas atuais e futuras em um painel para acompanhar meus agendamentos. (RF10)
+- **US24:** Como hóspede, quero consultar minhas reservas passadas para acessar meu histórico de utilização. (RF10)
+- **US25:** Como hóspede, quero ser informado quando o período escolhido ficar indisponível durante a reserva para selecionar outro período. (RF08, RN02, RN03)
+- **US26:** Como anfitrião, quero consultar as reservas atuais e futuras dos meus espaços para acompanhar sua ocupação e planejar os próximos aluguéis. (RF11)
 
 ### Avaliações e comentários
 
-- **US28:** Como hóspede, quero publicar uma nota de 1 a 5 estrelas e um comentário sobre um espaço para compartilhar minha experiência. (RF14)
-- **US29:** Como hóspede, quero consultar os comentários e a média das notas de um espaço para apoiar minha decisão de reserva. (RF14)
+- **US27:** Como hóspede, quero publicar uma nota de 1 a 5 estrelas e um comentário sobre um espaço para compartilhar minha experiência. (RF13)
+- **US28:** Como hóspede, quero consultar os comentários e a média das notas de um espaço para apoiar minha decisão de reserva. (RF13)
 
 ## 4 - Critérios de aceite da entrega
 

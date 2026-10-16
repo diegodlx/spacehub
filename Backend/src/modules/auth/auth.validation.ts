@@ -24,6 +24,11 @@ export const registerSchema = z.object({
     ),
 });
 
+export const loginSchema = z.object({
+    email: z.email().max(255),
+    senha: z.string().min(1),
+});
+
 export const registerValidation: RequestHandler = (req, res, next) => {
     const result = registerSchema.safeParse(req.body);
 
@@ -35,6 +40,18 @@ export const registerValidation: RequestHandler = (req, res, next) => {
                 message,
             })),
         });
+        return;
+    }
+
+    req.body = result.data;
+    next();
+};
+
+export const loginValidation: RequestHandler = (req, res, next) => {
+    const result = loginSchema.safeParse(req.body);
+
+    if (!result.success) {
+        res.status(HTTP_STATUS.BAD_REQUEST).json({ message: "Informe um e-mail e uma senha válidos." });
         return;
     }
 

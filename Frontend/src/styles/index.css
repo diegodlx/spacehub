@@ -159,6 +159,20 @@ main h2 {
     transform: none;
 }
 
+#login-message {
+    margin: 12px 0 0;
+    min-height: 1.5em;
+    font-size: 0.9rem;
+}
+
+#login-message[data-state="error"] {
+    color: #a32c2c;
+}
+
+#login-message[data-state="success"] {
+    color: var(--accent-dark);
+}
+
 .register-prompt {
     margin: 24px 0 0;
     padding-top: 20px;
